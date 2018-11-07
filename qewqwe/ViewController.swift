@@ -10,6 +10,12 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var aaa: UITextField!
+    @IBOutlet weak var bbb: UITextField!
+    @IBOutlet weak var ccc: UITextField!
+    @IBAction func caculator(_ sender: Any) {
+        ccc.text = "\(Int(aaa.text!)!+Int(bbb.text!)!)"
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
